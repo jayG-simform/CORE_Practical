@@ -1,0 +1,38 @@
+﻿<h1>Test Global exception handling</h1>
+<hr />
+
+@*<div class="">
+    <button class="btn btn-danger me-5 ms-5" style="">400 Bad Request</button>
+    <button class="btn btn-danger me-5 ms-5">300 Ambiguous</button>
+    <button class="btn btn-danger me-5 ms-5">500 Internal Server</button>
+    <button class="btn btn-danger me-5 ms-5">505 HTTP Version not supported</button> <br /><br />
+    <button class="btn btn-danger me-5 ms-5">405 Method not allowed</button>
+    <button class="btn btn-danger me-5 ms-3">414 Request-url Too Long</button>
+    <button class="btn btn-danger me-5">404 Not Found</button>
+</div>
+*@
+<div class="container text-center">
+    <div class="row g-2">
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="BadRequest" asp-controller="Home">BadRequest Example</a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="Ambiguous" asp-controller="Home">Ambiguous Example</a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="InternalServerError" asp-controller="Home">Internal Server Error Example</a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="HttpVersionNotSupport" asp-controller="Home">HTTP Version not supported Example </a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="NotFound" asp-controller="Home">NotFound Example</a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="RequestURLTooLong" asp-controller="Home">Request-url Too Long Example</a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="MethodNotAllowed" asp-controller="Home">Method not allowed Example</a></div>
+        </div>
+    </div>
+</div>
